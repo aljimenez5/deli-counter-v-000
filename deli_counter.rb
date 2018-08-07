@@ -17,7 +17,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  until katz_deli.size == 0 do
+  while katz_deli.size > 0 do
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
